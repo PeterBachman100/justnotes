@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./tiny-habits.css"/>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	<script src="./tiny-habits.js"></script>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	
+<title>Tiny Habits</title>
+</head>
+<body>
+	<div class="header">
+		<!-- Nav -->
+		<nav class="navbar">
+			<a id="logo">Just Notes</a>
+			<div class="menu">
+				<a>Topics</a>
+				<a>Books</a>
+				<a>Podcasts</a>
+				<a>Videos</a>
+			</div>
+		</nav>
+		<!-- End Nav -->
+		<!-- Progress Bar -->
+		<div class="progress-container">
+			<div class="progress-bar" id="progress-bar"></div>
+		  </div>
+	</div>
+	
+	<!-- Table of Contents -->
+	<div class="table-of-contents grey-bg">
+		<span class="expandable-header"><strong>Table of Contents</strong></span>
+		<div class="expandable-content">
+			<ul>
+				<li><a href="#0">Intro</a></li>
+				<li><a href="#1">Fogg Behavior Model</a></li>
+				<li><a href="#2">ABC's of Tiny Habits</a></li>
+				<li><a href="#3">Behavior Design</a></li>
+				<li><ul>
+						<li><a href="#4">Step 1: Clarify the Aspiration</a></li>
+						<li><a href="#5">Step 2: Explore Behavior Options</a></li>
+						<li><a href="#6">Step 3: Match with Specific Behaviors</a></li>
+						<li><a href="#7">Step 4: Start Tiny</a></li>
+						<li><a href="#8">Step 5: Find a Good Prompt</a></li>
+						<li><a href="#9">Step 6: Celebrate Successes</a></li>
+						<li><a href="#10">Step 7: Troubleshoot, Iterate, and Expand</a></li>
+					</ul></li>
+				<li><a href="#11">Tips</a></li>
+				<li><a href="#12">Flowchart Guides</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End table of contents -->
+	
+	<section class="main">
+		<!-- Intro -->
+		<div id="0" class="intro secondary-bg scroll-mg-tp py3 px5">
+				<div class="intro-info">
+					<h1 class="title">Tiny Habits: The Small Changes that Change Everything</h1>
+					<h2 class="author">- BJ Fogg</h2>
+				</div>
+				<div class="synopsis">
+					<p>Creating good habits (and "untangling" unwanted ones) can be both easy and fun.</p>
+					<p>"Behavior Design" is based on Dr. BJ Fogg's 20 years of research and personal coaching experience as a Behavior Scientist at Stanford University.</p>
+				</div>
+			</div>
+		</div>
+		<!-- End Intro -->
+		<!-- Summary -->
+			<section id="1" class="flex scroll-mg-tp main-section">
+				<h2>Fogg Behavior Model</h2>
+				<h3>Behavior = Motivation + Ability + Prompt</h3>
+				<div>
+					<h4>A Behavior will happen if both Motivation and Ability are high enough when the Prompt occurs.</h4>
+					<p>Aliquam erat volutpat. In non eleifend leo, ut euismod risus. Quisque pellentesque magna in interdum egestas. Nunc lobortis odio a congue scelerisque. Vivamus id ligula purus. Suspendisse efficitur dignissim faucibus. Vivamus ut fermentum neque. Pellentesque dignissim vulputate urna, at lacinia nunc auctor et. Pellentesque arcu ligula, dapibus id augue non, elementum vehicula ex.</p>
+				</div>
+				<div class="small-cards-wrap">
+					<div class="small-card small-cards-wrap flex-column">
+						<div class="secondary-bg small-card">
+							<h3 class="expandable-header">Motivation</h3>
+							<p class="expandable-content">Mauris efficitur dapibus congue. Mauris ipsum orci, finibus quis ante eu, molestie viverra erat. Suspendisse in dui vulputate, iaculis quam vitae, feugiat urna. In posuere vel nisi eu mollis. Vestibulum vitae eleifend libero, ut suscipit libero. </p>
+						</div>
+						<div class="secondary-bg small-card">
+							<h3 class="expandable-header">Ability</h3>
+							<p class="expandable-content">Donec augue ante, posuere at eros quis, dictum interdum lectus. Sed non tincidunt ante.</p>
+						</div>
+						<div class="secondary-bg small-card">
+							<h3 class="expandable-header">Prompt</h3>
+							<p class="expandable-content">Integer auctor ipsum et justo porta efficitur. Sed sit amet ultricies massa. Sed in turpis vel justo viverra lobortis sed at velit.</p>
+						</div>
+					</div>
+					<div class="small-card">
+						<img src="./images/Fogg-Behavior-Model.jpg"/>
+					</div>
+				</div>
+			</section>
+			<section id="2" class="scroll-mg-tp main-section">
+				<h2>The ABC's of Tiny Habits</h2>
+				<h3>liquam quis augue sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur pretium tortor, non placerat nisi laoreet sit amet. Sed ac ligula tempor, tristique sapien varius, egestas est. Phasellus at consectetur felis.</h3>
+				<div class="small-cards-wrap">
+					<div class="secondary-bg small-card">
+						<h3 class="expandable-header">Anchor</h3>
+						<p class="expandable-content">The Anchor reminds you to do the Behavior. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam sit amet suscipit magna. Proin id ligula commodo, scelerisque libero ut, viverra diam. Praesent porttitor, dui sed vestibulum aliquam, nibh nulla dignissim nisi, vitae finibus eros orci ac lorem. Quisque sed nunc quis risus semper fermentum.</p>
+					</div>
+					<div class="secondary-bg small-card">
+						<h3 class="expandable-header">Behavior</h3>
+						<p class="expandable-content">You do the Behavior immediately after the Anchor Moment. Phasellus ut ligula eget dolor mollis aliquam eu lacinia orci. Donec sed aliquam lectus, a elementum nulla. Nullam cursus turpis nec metus faucibus, a tempus mi vulputate. Morbi eu orci elit. Praesent pharetra diam at ipsum elementum, id vehicula justo mollis. Nunc sed sapien facilisis, mollis tellus vitae, suscipit lectus.</p>
+					</div>
+					<div class="secondary-bg small-card">
+						<h3 class="expandable-header">Celebration</h3>
+						<p class="expandable-content">You Celebrate immediately after doing the Behavior.Vestibulum porta risus non aliquet tincidunt. Donec sit amet tortor eros. Nunc egestas enim id porta vehicula. Sed eu sagittis ex, at rutrum sapien. Aenean ac mi ut felis suscipit blandit. Cras vehicula sit amet ex ac ultrices. Nam et eleifend massa. In hac habitasse platea dictumst. Integer scelerisque tempus sodales.</p>
+					</div>
+				</div>
+			</section>
+			<section id="3" class="scroll-mg-tp main-section grey-bg">
+				<h2>Behavior Design</h2>
+				<h3>Fusce blandit consequat faucibus. Sed mattis viverra sapien, at ornare ipsum tincidunt vel. Integer finibus condimentum diam, eu condimentum felis facilisis at.</h3>
+				<div class="small-cards-wrap">
+					<div class="small-card">
+						<h4>Steps in Behavior Design</h4>
+						<ol>
+							<li>Clarify the Aspiration</li>
+							<li>Explore Behavior Options</li>
+							<li>Match with Specific Behaviors</li>
+							<li>Start Tiny</li>
+							<li>Find a Good Prompt</li>
+							<li>Celebrate Successes</li>
+							<li>Troubleshoot, Iterate, and Expand</li>
+						</ol>
+					</div>
+					<p class="small-card">estibulum at massa ut lacus tempus viverra euismod eget sapien. In accumsan neque felis, vel condimentum sem vestibulum sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sit amet nisl eu ante sagittis efficitur sed nec felis. Ut scelerisque nisl et egestas viverra. Aliquam quis augue sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur pretium tortor, non placerat nisi laoreet sit amet.</p>
+				</div>
+			</section>
+		<section class="steps">
+			<h1>Steps in Behavior Design</h1>
+			<span class="step">1 / 7</span>
+			<section id="4" class="scroll-mg-tp main-section">
+				<h2>Clarify The Aspiration</h2>
+				<h3>What do you actually want?</h3>
+				<p>Our actual goal can often be hidden behind what we think will get us there. For example, some people want to meditate 15 minutes a day, but the actual goal is reduced stress, or improved focus. They fail time and time again to achieve their goal, because meditating is not the right fit for them.</p>
+				<p>There are plenty of ways to reduce stress and improve focus that aren't meditating. But if you don't realize your True Aspiration, you will never see the easier path.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec rhoncus quam, nec tincidunt dolor. Nunc eget fermentum ipsum, eget pellentesque massa. Sed interdum sem in tellus molestie, quis molestie diam sagittis. Donec tincidunt nulla sit amet iaculis pulvinar. Phasellus quis sem accumsan, faucibus lorem ut, porta purus. Proin feugiat ipsum felis. In eleifend elementum maximus. Nulla ut tellus blandit est ornare ultrices id ut mi. </p>
+			</section>
+			<span class="step">2 / 7</span>
+			<section id="5" class=" scroll-mg-tp main-section">
+				<h2>Explore Behavior Options</h2>
+				<h3>Be outlandish! This is a time for creativity, not analysis and judgement. Nothing is off the table when you're brainstorming!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec rhoncus quam, nec tincidunt dolor. Nunc eget fermentum ipsum, eget pellentesque massa. Sed interdum sem in tellus molestie, quis molestie diam sagittis. Donec tincidunt nulla sit amet iaculis pulvinar. Phasellus quis sem accumsan, faucibus lorem ut, porta purus. Proin feugiat ipsum felis. In eleifend elementum maximus. Nulla ut tellus blandit est ornare ultrices id ut mi. </p>
+				<img src="./images/swarm-of-behaviors.jpg" />
+				<ol>
+					<li>Draw a cloud on a piece of paper.</li>
+					<li>Write your inspiration inside a cloud.</li>
+					<li>Come up with ten or more behaviors that would lead to your aspiration.Write each behavior outside the cloud with arrow pointing toward the cloud.</li>
+				</ol>
+			</section>
+			<span class="step">3 / 7</span>
+			<section id="6" class=" scroll-mg-tp main-section">
+				<h2>Match with Specific Behaviors</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec rhoncus quam, nec tincidunt dolor. Nunc eget fermentum ipsum, eget pellentesque massa. Sed interdum sem in tellus molestie, quis molestie diam sagittis. Donec tincidunt nulla sit amet iaculis pulvinar. Phasellus quis sem accumsan, faucibus lorem ut, porta purus. Proin feugiat ipsum felis. In eleifend elementum maximus. Nulla ut tellus blandit est ornare ultrices id ut mi. </p>
+				<ol>
+					<li>Write each behavior on a card of small piece of paper.</li>
+					<li>Sort the behavior cards up and down along the impact dimension. Don't think about feasibility. Focus on the impact that the behaviors could have.</li>
+					<li>Slide the behavior cards side to side along the feasibility dimension. Be realistic. Can you really get yourself to do these behaviors?</li>
+					<li>Look in the upper right-hand corner. These are your Golden Behaviors.</li>
+				</ol>
+				<p>When focus mapping, focus on feasibility and practicality.</p>
+				<h3>The key question is: Can I get myself to do this?</h3>
+				<p>A key to lasting change is matching yourself to behaviors you want to do, not just think you should do.</p>
+				<p>We should be dreamy about our aspirations, but not about the behaviors that get us there.</p>
+				<img src="./images/focus-map.jpg" />
+			</section>
+			<span class="step">4 / 7</span>
+			<section id="7" class=" scroll-mg-tp main-section">
+				<h2>Start Tiny</h2>
+				<h3>Consistency is the second most important part of behavior design.</h3>
+				<p>When you design a new habit, you are designing for consistency, for which simplicity is key. By going tiny, you create consistency, which makes sure the habit sticks.</p>
+				<p>There are many ways to make a behavior easier to do:</p>
+				<ul>
+					<li>Increase skills</li>
+					<li>Get tools and resources</li>
+					<li>Make the behavior tiny by Scaling Back or using a Starter Step.</li>
+				</ul>
+				<p>Scaling Back: Shrinking your desired behavior. (Walk 10 steps instead of 3 miles)</p>
+				<p>Starter Step: One small move toward your desired behavior. (Put on your shoes instead of walking 3 miles)</p>
+				<p><strong>In any case, the tiniest version counts as success, and it is critical that you see it, and celebrate it, as such.</strong></p>
+				<img src="./images/how-to-make-a-behavior-easier-to-do.jpg" />
+			</section>
+			<span class="step">5 / 7</span>
+			<section id="8" class=" scroll-mg-tp main-section">
+				<h2>Find a Good Prompt</h2>
+				<p>Prompts can be based off personal, internal cues (you feel hungry), external cues (a sticky note or alarm), or based off actions (your feet hit the floor after waking up). <strong>Action-based prompts are by far the most reliable. These are called Anchor Moments, or Anchors for short.</strong></p>
+				<h3>Using Anchors as Cues for Habits</h3>
+				<p>As a personal resource, make a list of all moments that happen reliably throughout your day, using these sections as a guide. Here are some of mine:</p>
+				
+				<h4>Morning</h4>
+				<p>Wake up, feet hit the floor, go pee, open bedroom door, turn on lights, enter kitchen, open fridge, finish eating, brush teeth, close front door, say goodbye to Tiffany, pass the garbage, re-enter the complex, enter the front door, unclip Mia, close the closet door.</p>
+				<h4>Work</h4>
+				<p>Open Laptop, startup programs, open email, open OneNote, start a meeting, end a meeting, pomodoro timer starts, pomodoro timer ends, 4pm.</p>
+				<h4>Lunch</h4>
+				<p>11:45, open fridge, close fridge, first bite, last bite, open/close front door.</p>
+				<hr>
+				<p>When using Anchors, try to find something that defines a precise, final moment of the action, called the Trailing Edge. For example, the Trailing Edge of brushing my teeth is putting my toothbrush back in the holder. Using the Trailing Edge of an Anchor is much more reliable than using the general moment.</p>
+				<p><strong>For the best results, the Anchor (Prompt) and Behavior should have the same Physical Location, Theme/Purpose, and Frequency.</strong>
+					<ul>
+						<li>Physical location: the anchor and behavior need to happen in the same location</li>
+						<li>Frequency: If you want to do something 4 times a day, match it with an anchor that happens 4 times a day</li>
+						<li>Theme/purpose: for the best results, match productivity behaviors with productivity anchors, relaxing behaviors with relaxing anchors, etc.</li>
+					</ul>
+				The habit recipe "After I sit down for work, I will change my car oil" will almost certainly fail because the location, frequency, and theme don't match.
+				</p>
+				<p>You can use irritants and in-between times in your life as prompts for behaviors, such as hearing your coworker complain, or waiting in line. These are respectively called Pearl and Meanwhile habits.</p>
+			</section>
+			<span class="step">6 / 7</span>
+			<section id="9" class=" scroll-mg-tp main-section">
+				<h2>Celebrate Successes</h2>
+				<strong>This is the most important part of creating habits!</strong>
+				<h3>Emotions Create Habits</h3>
+				<strong>I change best by feeling good, not by feeling bad.</strong>
+				<p>When you celebrate effectively , you tap into the reward circuitry of your brain. By feeling good at the right moment , you cause your brain to recognize and encode the sequence of behaviors you just performed. In other words , you can hack your brain to create a habit by celebrating and self - reinforcing .</p>
+				<strong>Habits can form in just a few days if there is a strong positive emotion connected.</strong>
+				<p>Conversely, if a behavior is painful, awkward, or unpleasant, your brain will rewire to start avoiding that habit. To keep a habit alive, celebrate extra when it is uncomfortable. </p>
+				<p>Use celebration anytime you want to reinforce a behavior in yourself. Celebration will one day be ranked alongside mindfulness and gratitude as daily practices that contribute most to our happiness and well-being.</p>
+				<h3>Celebrations need to feel authentic and create a feeling of "Shine" to be effective. Here are some celebrations that work for me:</h3>
+				<ul>
+					<li>Consider how your new habit helps you achieve your life's purpose.</li>
+					<li>Imagine getting the news that you got a new job.</li>
+					<li>Pause, breathe deeply, and appreciate your success.</li>
+					<li>Inhale and think of energy entering you.</li>
+					<li>Pound your chest.</li>
+					<li>Fist pump.</li>
+					<li>Thank God.</li>
+					<li>Play the song "Get Up" by T-pain.</li>
+					<li>Flex.</li>
+					<li>Say or think: "Good Job", "That's it", "YES", "F*** yeah"</li>
+					<li>Visualize God saying "Well done good and faithful servant"</li>
+				</ul>
+			</section>
+			<span class="step">7 / 7</span>
+			<section id="10" class=" scroll-mg-tp main-section">
+				<h2>Troubleshoot, Iterate, and Expand</h2>
+				<p>You can use the Ability Chain to analyze a habit and make it easier or harder, depending on if you want to make or break a habit</p>
+				<img src="./images/ability-chain.jpg" />
+				<p>Start with the question: <strong>What is making the behavior hard to do?</strong></p>
+				<ul>
+					<li>Do you have enough <strong>time</strong>?</li>
+					<li>Do you have enough <strong>money</strong>?</li>
+					<li>Are you <strong>physically capable</strong>?</li>
+					<li>Do you have enough <strong>creative or mental energy</strong>?</li>
+					<li>Does it fit into your <strong>routine</strong>?</li>
+				</ul>
+				<h3>Rehearse your habit!</h3>
+				<p>Practice your prompt, habit, and celebration 10 times in a row. This will drastically increase how quickly you pick up the habit.</p>
+			</section>
+			<section class="main-section scroll-mg-tp" id="11">
+				<h2>How To Start</h2>
+				<h3>Start where you want. Let your habits grow naturally. Celebrate the whole way!</h3>
+				<h4>Big Change Comes From Small, Incremental Progress</h4>
+				<ul>
+					<li>Stop judging yourself</li>
+					<li>Don't raise the bar on your habit prematurely. Positive emotions and consistency are the most important factors for making a habit stick and grow.</li>
+					<li>Break down your aspirations into specific behaviors</li>
+					<li>Celebrate every success</li>
+					<li>Embrace mistakes as discoveries and use them to move forward</li>
+					<li>You ARE doing something worth celebrating.</li>
+				</ul>
+			</section>
+	</section>
+	<!-- End Summary -->
+	<section class="main-section scroll-mg-tp" id="12">
+		<div class="small-cards-wrap">
+			<div class="small-card"><img src="./images/masterplan-1.jpg" /></div>
+			<div class="small-card"><img src="./images/masterplan-2.jpg" /></div>
+			<div class="small-card"><img src="./images/masterplan-3.jpg" /></div>
+		</div>
+	</section>
+</section>
+</body>
+</html>

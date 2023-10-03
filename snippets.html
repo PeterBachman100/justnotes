@@ -1,0 +1,18 @@
+<!-- Expandable format -->
+<div class="expandable-header"></div>
+<div class="expandable-content"></div>
+
+expandable js 
+jQ('.expandable-content').hide();
+jQ('.expandable-header').click(function() {
+
+	if( jQ( this ).hasClass( 'expanded' ) ) {
+		jQ( this ).removeClass( 'expanded' );
+		jQ( this ).next().slideUp('fast');
+	}
+	
+	else {
+		jQ( this ).addClass( 'expanded' );
+		jQ( this ).next().slideDown('fast');
+	}
+});
