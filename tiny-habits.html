@@ -16,7 +16,7 @@
 <title>Tiny Habits</title>
 </head>
 <body>
-	<div class="header">
+	<div class="header shadow">
 		<!-- Nav -->
 		<nav class="navbar">
 			<a id="logo">Just Notes</a>
@@ -36,22 +36,20 @@
 	
 	<!-- Table of Contents -->
 	<div class="table-of-contents grey-bg">
-		<span class="expandable-header"><strong>Table of Contents</strong></span>
-		<div class="expandable-content">
+		<p id="toc-toggle" class="shadow">Table of Contents</p>
+		<div class="grey-bg  shadow" id="toc">
 			<ul>
 				<li><a href="#0">Intro</a></li>
 				<li><a href="#1">Fogg Behavior Model</a></li>
 				<li><a href="#2">ABC's of Tiny Habits</a></li>
 				<li><a href="#3">Behavior Design</a></li>
-				<li><ul>
-						<li><a href="#4">Step 1: Clarify the Aspiration</a></li>
-						<li><a href="#5">Step 2: Explore Behavior Options</a></li>
-						<li><a href="#6">Step 3: Match with Specific Behaviors</a></li>
-						<li><a href="#7">Step 4: Start Tiny</a></li>
-						<li><a href="#8">Step 5: Find a Good Prompt</a></li>
-						<li><a href="#9">Step 6: Celebrate Successes</a></li>
-						<li><a href="#10">Step 7: Troubleshoot, Iterate, and Expand</a></li>
-					</ul></li>
+				<li><a href="#4">Step 1: Clarify the Aspiration</a></li>
+				<li><a href="#5">Step 2: Explore Behavior Options</a></li>
+				<li><a href="#6">Step 3: Match with Specific Behaviors</a></li>
+				<li><a href="#7">Step 4: Start Tiny</a></li>
+				<li><a href="#8">Step 5: Find a Good Prompt</a></li>
+				<li><a href="#9">Step 6: Celebrate Successes</a></li>
+				<li><a href="#10">Step 7: Troubleshoot, Iterate, and Expand</a></li>		
 				<li><a href="#11">Tips</a></li>
 				<li><a href="#12">Flowchart Guides</a></li>
 			</ul>
@@ -66,7 +64,7 @@
 					<h1 class="title">Tiny Habits: The Small Changes that Change Everything</h1>
 					<h2 class="author">- BJ Fogg</h2>
 				</div>
-				<div class="synopsis">
+				<div class="teaser">
 					<p>Creating good habits (and "untangling" unwanted ones) can be both easy and fun.</p>
 					<p>"Behavior Design" is based on Dr. BJ Fogg's 20 years of research and personal coaching experience as a Behavior Scientist at Stanford University.</p>
 				</div>
@@ -74,7 +72,7 @@
 		</div>
 		<!-- End Intro -->
 		<!-- Summary -->
-			<section id="1" class="flex scroll-mg-tp main-section">
+			<section id="1" class="scroll-mg-tp main-section">
 				<h2>Fogg Behavior Model</h2>
 				<h3>Behavior = Motivation + Ability + Prompt</h3>
 				<div>
@@ -83,15 +81,15 @@
 				</div>
 				<div class="small-cards-wrap">
 					<div class="small-card small-cards-wrap flex-column">
-						<div class="secondary-bg small-card">
+						<div class="secondary-bg small-card shadow">
 							<h3 class="expandable-header">Motivation</h3>
 							<p class="expandable-content">Mauris efficitur dapibus congue. Mauris ipsum orci, finibus quis ante eu, molestie viverra erat. Suspendisse in dui vulputate, iaculis quam vitae, feugiat urna. In posuere vel nisi eu mollis. Vestibulum vitae eleifend libero, ut suscipit libero. </p>
 						</div>
-						<div class="secondary-bg small-card">
+						<div class="secondary-bg small-card shadow">
 							<h3 class="expandable-header">Ability</h3>
 							<p class="expandable-content">Donec augue ante, posuere at eros quis, dictum interdum lectus. Sed non tincidunt ante.</p>
 						</div>
-						<div class="secondary-bg small-card">
+						<div class="secondary-bg small-card shadow">
 							<h3 class="expandable-header">Prompt</h3>
 							<p class="expandable-content">Integer auctor ipsum et justo porta efficitur. Sed sit amet ultricies massa. Sed in turpis vel justo viverra lobortis sed at velit.</p>
 						</div>
@@ -105,21 +103,21 @@
 				<h2>The ABC's of Tiny Habits</h2>
 				<h3>liquam quis augue sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur pretium tortor, non placerat nisi laoreet sit amet. Sed ac ligula tempor, tristique sapien varius, egestas est. Phasellus at consectetur felis.</h3>
 				<div class="small-cards-wrap">
-					<div class="secondary-bg small-card">
+					<div class="secondary-bg small-card shadow">
 						<h3 class="expandable-header">Anchor</h3>
 						<p class="expandable-content">The Anchor reminds you to do the Behavior. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam sit amet suscipit magna. Proin id ligula commodo, scelerisque libero ut, viverra diam. Praesent porttitor, dui sed vestibulum aliquam, nibh nulla dignissim nisi, vitae finibus eros orci ac lorem. Quisque sed nunc quis risus semper fermentum.</p>
 					</div>
-					<div class="secondary-bg small-card">
+					<div class="secondary-bg small-card shadow">
 						<h3 class="expandable-header">Behavior</h3>
 						<p class="expandable-content">You do the Behavior immediately after the Anchor Moment. Phasellus ut ligula eget dolor mollis aliquam eu lacinia orci. Donec sed aliquam lectus, a elementum nulla. Nullam cursus turpis nec metus faucibus, a tempus mi vulputate. Morbi eu orci elit. Praesent pharetra diam at ipsum elementum, id vehicula justo mollis. Nunc sed sapien facilisis, mollis tellus vitae, suscipit lectus.</p>
 					</div>
-					<div class="secondary-bg small-card">
+					<div class="secondary-bg small-card shadow">
 						<h3 class="expandable-header">Celebration</h3>
 						<p class="expandable-content">You Celebrate immediately after doing the Behavior.Vestibulum porta risus non aliquet tincidunt. Donec sit amet tortor eros. Nunc egestas enim id porta vehicula. Sed eu sagittis ex, at rutrum sapien. Aenean ac mi ut felis suscipit blandit. Cras vehicula sit amet ex ac ultrices. Nam et eleifend massa. In hac habitasse platea dictumst. Integer scelerisque tempus sodales.</p>
 					</div>
 				</div>
 			</section>
-			<section id="3" class="scroll-mg-tp main-section grey-bg">
+			<section id="3" class="scroll-mg-tp main-section secondary-bg">
 				<h2>Behavior Design</h2>
 				<h3>Fusce blandit consequat faucibus. Sed mattis viverra sapien, at ornare ipsum tincidunt vel. Integer finibus condimentum diam, eu condimentum felis facilisis at.</h3>
 				<div class="small-cards-wrap">
@@ -153,28 +151,43 @@
 				<h2>Explore Behavior Options</h2>
 				<h3>Be outlandish! This is a time for creativity, not analysis and judgement. Nothing is off the table when you're brainstorming!</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec rhoncus quam, nec tincidunt dolor. Nunc eget fermentum ipsum, eget pellentesque massa. Sed interdum sem in tellus molestie, quis molestie diam sagittis. Donec tincidunt nulla sit amet iaculis pulvinar. Phasellus quis sem accumsan, faucibus lorem ut, porta purus. Proin feugiat ipsum felis. In eleifend elementum maximus. Nulla ut tellus blandit est ornare ultrices id ut mi. </p>
-				<img src="./images/swarm-of-behaviors.jpg" />
-				<ol>
-					<li>Draw a cloud on a piece of paper.</li>
-					<li>Write your inspiration inside a cloud.</li>
-					<li>Come up with ten or more behaviors that would lead to your aspiration.Write each behavior outside the cloud with arrow pointing toward the cloud.</li>
-				</ol>
+				<div class="small-cards-wrap">
+					<div class="small-card">
+						<img src="./images/swarm-of-behaviors.jpg" />
+					</div>
+					<div class="small-card">
+						<ol>
+							<li>Draw a cloud on a piece of paper.</li>
+							<li>Write your inspiration inside a cloud.</li>
+							<li>Come up with ten or more behaviors that would lead to your aspiration. Write each behavior outside the cloud, with an arrow pointing toward the cloud.</li>
+						</ol>
+					</div>
+				</div>
 			</section>
 			<span class="step">3 / 7</span>
 			<section id="6" class=" scroll-mg-tp main-section">
 				<h2>Match with Specific Behaviors</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec rhoncus quam, nec tincidunt dolor. Nunc eget fermentum ipsum, eget pellentesque massa. Sed interdum sem in tellus molestie, quis molestie diam sagittis. Donec tincidunt nulla sit amet iaculis pulvinar. Phasellus quis sem accumsan, faucibus lorem ut, porta purus. Proin feugiat ipsum felis. In eleifend elementum maximus. Nulla ut tellus blandit est ornare ultrices id ut mi. </p>
-				<ol>
-					<li>Write each behavior on a card of small piece of paper.</li>
-					<li>Sort the behavior cards up and down along the impact dimension. Don't think about feasibility. Focus on the impact that the behaviors could have.</li>
-					<li>Slide the behavior cards side to side along the feasibility dimension. Be realistic. Can you really get yourself to do these behaviors?</li>
-					<li>Look in the upper right-hand corner. These are your Golden Behaviors.</li>
-				</ol>
+				<div class="small-cards-wrap">
+					
+					<div class="small-card">
+						<ol>
+							<li>Write each behavior on a card of small piece of paper.</li>
+							<li>Sort the behavior cards up and down along the impact dimension. Don't think about feasibility. Focus on the impact that the behaviors could have.</li>
+							<li>Slide the behavior cards side to side along the feasibility dimension. Be realistic. Can you really get yourself to do these behaviors?</li>
+							<li>Look in the upper right-hand corner. These are your Golden Behaviors.</li>
+						</ol>
+					</div>
+					<div class="small-card">
+						<img src="./images/focus-map.jpg" />
+					</div>
+				</div>
+				
 				<p>When focus mapping, focus on feasibility and practicality.</p>
 				<h3>The key question is: Can I get myself to do this?</h3>
 				<p>A key to lasting change is matching yourself to behaviors you want to do, not just think you should do.</p>
 				<p>We should be dreamy about our aspirations, but not about the behaviors that get us there.</p>
-				<img src="./images/focus-map.jpg" />
+				
 			</section>
 			<span class="step">4 / 7</span>
 			<section id="7" class=" scroll-mg-tp main-section">
@@ -275,9 +288,9 @@
 	<!-- End Summary -->
 	<section class="main-section scroll-mg-tp" id="12">
 		<div class="small-cards-wrap">
-			<div class="small-card"><img src="./images/masterplan-1.jpg" /></div>
-			<div class="small-card"><img src="./images/masterplan-2.jpg" /></div>
-			<div class="small-card"><img src="./images/masterplan-3.jpg" /></div>
+			<div class="small-card"><img src="./images/masterplan-1.jpg" /><a href="./images/masterplan-1.jpg" target="_blank"><i class="fa-solid fa-download"></i> Download</a></div>
+			<div class="small-card"><img src="./images/masterplan-2.jpg" /><a href="./images/masterplan-2.jpg" target="_blank"><i class="fa-solid fa-download"></i> Download</a></div>
+			<div class="small-card"><img src="./images/masterplan-3.jpg" /><a href="./images/masterplan-3.jpg" target="_blank"><i class="fa-solid fa-download"></i> Download</a></div>
 		</div>
 	</section>
 </section>
