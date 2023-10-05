@@ -40,7 +40,7 @@ body {
 }
 
 strong {
-	font-weight: 500;
+	font-weight: 700;
 }
 
 .small {font-size: 0.8rem;}
@@ -62,6 +62,10 @@ body {
 
 .grey-bg {
 	background-color: #eee;
+}
+
+.shadow {
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 /* end Colors */
@@ -123,16 +127,12 @@ body {
 /* Table of Contents */
 
 .table-of-contents {
-	padding: 0.5rem;	
 	position: fixed;
 	top: 60px;
 	left: 7px;
 	border-radius: 10px;
 	z-index: 100;
-}
-
-.table-of-contents h2 {
-	text-align: center;
+	transition: left 0.3s ease;
 }
 
 .table-of-contents a {
@@ -144,9 +144,48 @@ body {
 	color: #0BD0ED
 }
 
-.table-of-contents .expandable-content {
+#toc {
+	position: fixed;
+	left: -100%; /* Hide off-screen initially */
 	padding: 0.5rem;
+	margin: 1rem 0.5rem;
+	border-radius: 10px;
+	transition: left 0.3s ease;
 }
+
+#toc.active {
+	left: 0; /* Show the menu */
+}
+
+#toc li {
+	margin-left: 1rem;
+	list-style-type: disc;
+}
+
+#toc-toggle {
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: 700;
+	padding: 1rem;
+	transition: left 0.3s ease;
+}
+#toc-toggle:before {
+	content: "\f03a";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 700;
+	padding-right: 2rem;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color: #0BD0ED;
+}
+
+#toc-toggle:hover {
+	background-color: #ddd;
+}
+
+
 /* End table of contents */
 
 .scroll-mg-tp {
@@ -186,7 +225,7 @@ body {
 .intro .intro-info .title {
 	line-height: 1.1;
 }
-.intro .synopsis {
+.intro .teaser {
 	max-width: 800px;
 }
 /* End intro */
@@ -210,7 +249,7 @@ li {
 }
 
 a {
-	color: #006AC6;
+	color: #0BD0ED;
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -232,12 +271,6 @@ a {
 	display: inline-block;
 	width: 100%;
 	cursor: pointer;
-}
-.grey-bg .expandable-header:hover {
-	background-color: #ddd;
-}
-.grey-bg .expandable-header.expanded {
-	background-color: #ddd;
 }
 
 .secondary-bg .expandable-header:hover {
@@ -261,8 +294,6 @@ a {
 
 .expandable-header.expanded:before {
 	content: "\f068";
-	font-family: "Font Awesome 6 Free";
-	font-weight: 700;
 }
 
 .expandable-content {
@@ -316,6 +347,12 @@ a {
 	display: flex;
 	gap: 1rem;
 	align-items: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+	.small-cards-wrap {
+		flex-direction: column;
+	}
 }
 /* Small card */
 .small-card {
