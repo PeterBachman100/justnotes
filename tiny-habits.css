@@ -103,7 +103,18 @@ body {
 
 #logo {
 	font-weight: 700;
+	font-size: 1.125rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
 }
+
+#logo img {
+	height: 1.125rem;
+	width: auto;
+	border-radius: revert;	
+}
+
 .menu {
 	display: flex;
 	gap: 3rem;
@@ -130,7 +141,7 @@ body {
 	position: fixed;
 	top: 60px;
 	left: 7px;
-	border-radius: 10px;
+	border-radius: 5px;
 	z-index: 100;
 	transition: left 0.3s ease;
 }
@@ -149,7 +160,7 @@ body {
 	left: -100%; /* Hide off-screen initially */
 	padding: 0.5rem;
 	margin: 1rem 0.5rem;
-	border-radius: 10px;
+	border-radius: 5px;
 	transition: left 0.3s ease;
 }
 
@@ -163,7 +174,7 @@ body {
 }
 
 #toc-toggle {
-	border-radius: 10px;
+	border-radius: 5px;
 	cursor: pointer;
 	font-weight: 700;
 	padding: 1rem;
@@ -214,20 +225,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	border-radius: 10px;
 	margin-top: 5rem;
 	margin-bottom: 3rem;
+	width: 125%
 }
-
-.intro .intro-info {
-}
-
-.intro .intro-info .title {
+.intro .title {
 	line-height: 1.1;
 }
-.intro .teaser {
-	max-width: 800px;
-}
+
 /* End intro */
 
 
@@ -236,12 +241,20 @@ body {
 img {
 	width: 100%;
 	max-width: 700px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 ul li {
 	list-style-type: none;
 	margin-left: 3rem;
+}
+ol, ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+ol li {
+	list-style-type: decimal;
 }
 
 li {
@@ -263,11 +276,37 @@ a {
 	text-align: center;
 }
 
+.gap1 {
+	gap: 1rem;
+}
+.text-block {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	max-width: 800px;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+}
+
+.accent-border {
+	border: 3px solid #0BD0ED;
+}
+
+.rounded {
+	border-radius: 5px;
+}
+.call-out {
+	color: #0BD0ED;
+	font-weight: 700;
+	margin: 1rem;
+	text-align: center;
+}
+
 /* Expandable */
 .expandable-header {
 	transition: ease 0.3s;
 	padding: 0.5rem 1rem;
-	border-radius: 10px;
+	border-radius: 5px;
 	display: inline-block;
 	width: 100%;
 	cursor: pointer;
@@ -310,19 +349,23 @@ a {
 	color: #ddd;
 	padding: 1rem;
 	background-color: white;
-	translate: -50%;
+	translate: -50% -25%;
 	z-index: 1;
 }
 
 .steps {
 	border: 5px solid #ddd;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding-top: 2rem;
 }
 
 .steps h1 {
 	text-align: center;
 	color: #ddd;
+}
+
+.steps section {
+	margin-top: 8rem;
 }
  /* End Steps */
 
@@ -336,7 +379,7 @@ a {
 	flex-direction: column;
 	padding: 3rem 5rem;
 	align-items: center;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .main-section h2 {
@@ -347,6 +390,7 @@ a {
 	display: flex;
 	gap: 1rem;
 	align-items: flex-start;
+	border-radius: 5px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -356,7 +400,7 @@ a {
 }
 /* Small card */
 .small-card {
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 1rem 2rem;
 	width: 100%;
 }
@@ -385,6 +429,10 @@ a {
 .py5 {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
+}
+.py7 {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
 }
 .px1 {
 	padding-left: 1rem;
