@@ -521,9 +521,52 @@ a {
 	padding-left: 5rem;
 	padding-right: 5rem;
 }
-/* Margin */
+/* Mobile Menu */
+#mobile-menu-toggle {
+	display: none;
+}
+
+#mobile-menu-toggle {
+	cursor: pointer;
+	transition: ease 0.3s;
+	font-size: 2rem
+}
+#mobile-menu-toggle:hover {
+	color: #0BD0ED;
+}
+
+#mobile-menu {
+	position: fixed;
+	right: -200%; /* Hide off-screen initially */
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	border-radius: 5px;
+	transition: 0.3s ease;
+	background: white;
+	border: 1px solid #ddd;
+}
+
+#mobile-menu a {
+	font-size: 2rem;
+}
+
+#mobile-menu.active {
+	top: 54px;
+	right: 0;
+}
 
 @media screen and (max-width: 600px) {
+	
+	#mobile-menu-toggle {
+		display: block;
+	}
+	
+	.menu {
+		display: none;
+	}
+	
 	.main {
 		padding: 0.5rem 5%;
 	}

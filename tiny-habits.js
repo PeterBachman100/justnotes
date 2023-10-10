@@ -25,25 +25,50 @@ jQ(document).ready(function() {
 		}
 	});
 	
-	const menuToggle = document.getElementById("toc-toggle");
-	const mobileMenu = document.getElementById("toc");
+	// Table of Contents
+	const tocToggle = document.getElementById("toc-toggle");
+	const toc = document.getElementById("toc");
 	
-	menuToggle.addEventListener("click", function () {
-		mobileMenu.classList.toggle("active");
+	tocToggle.addEventListener("click", function () {
+		toc.classList.toggle("active");
 	});
 	
 	// Close the menu when a menu item is clicked
-	const menuItems = mobileMenu.querySelectorAll("a");
-	menuItems.forEach(function (item) {
+	const tocItems = toc.querySelectorAll("a");
+	tocItems.forEach(function (item) {
 		item.addEventListener("click", function () {
-			mobileMenu.classList.remove("active");
+			toc.classList.remove("active");
 		});
 	});
 	
 	// Close the menu when clicking outside of it
 	document.addEventListener("click", function (event) {
-		if (!mobileMenu.contains(event.target) && event.target !== menuToggle) {
-			mobileMenu.classList.remove("active");
+		if (!toc.contains(event.target) && event.target !== tocToggle) {
+			toc.classList.remove("active");
+		}
+	});
+	
+	
+	// Mobile Menu
+	const mmToggle = document.getElementById("mobile-menu-toggle");
+	const mm = document.getElementById("mobile-menu");
+	
+	mmToggle.addEventListener("click", function () {
+		mm.classList.toggle("active");
+	});
+	
+	// Close the menu when a menu item is clicked
+	const menuItems = toc.querySelectorAll("a");
+	menuItems.forEach(function (item) {
+		item.addEventListener("click", function () {
+			mm.classList.remove("active");
+		});
+	});
+	
+	// Close the menu when clicking outside of it
+	document.addEventListener("click", function (event) {
+		if (!mm.contains(event.target) && event.target !== mmToggle) {
+			mm.classList.remove("active");
 		}
 	});
 	
