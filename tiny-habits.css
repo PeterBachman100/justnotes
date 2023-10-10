@@ -536,4 +536,13 @@ a {
 		padding: 0;
 		font-size: 2rem;
 	}
+	.small-card {
+		padding: 0.5rem 1rem;
+	}
+	.steps section {
+		margin-top: 2rem;
+	}
+	.steps h1 {
+		font-size: 1.5rem;
+	}
 }
