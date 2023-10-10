@@ -523,7 +523,7 @@ a {
 }
 /* Margin */
 
-@screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	.main {
 		padding: 0.5rem 5%;
 	}
